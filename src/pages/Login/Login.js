@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Login.css";
 
 function Login() {
+  // Google Login
+  function handleCallbackResponse(response) {
+    document.getElementById("google-login").hidden = true;
+  }
+
+  useEffect(() => {
+    /*global google*/
+    google.accounts.id.initialize({
+      client_id:
+        "1071041387259-2kf53ndccj9q49i3iukrl235or4kbhgd.apps.googleusercontent.com",
+      callback: handleCallbackResponse,
+    });
+
+    google.accounts.id.renderButton(document.getElementById("google-login"), {
+      theme: "outline",
+      size: "large",
+      width: 233, // Needs resizing
+    });
+  }, []);
+
+  // Facebook Login
+
   return (
     <div>
       <h1>Login</h1>
@@ -24,14 +46,19 @@ function Login() {
           <a href="/">Sign Up</a>
         </div>
         <div className="border-line">OR</div>
-
+        {/* Google Button */}
         <div id="google-login"></div>
+        {/* Facebook Button */}
         <div
           class="fb-login-button"
-          data-max-rows="1"
+          id="fb-login"
+          data-width="275"
           data-size="large"
+          data-max-rows="1"
           data-button-type="continue_with"
-          data-use-continue-as="true"
+          data-layout=""
+          data-auto-logout-link="true"
+          data-use-continue-as="false"
         ></div>
       </form>
     </div>
