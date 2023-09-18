@@ -24,14 +24,17 @@ const Profile = () => {
 					</a>
 					<h2 className='profile-header'>Profile</h2>
 					<a href='/settings'>
-					<FiSettings className='settings-icon'/>
+						<FiSettings className='settings-icon' />
 					</a>
 				</nav>
 			</header>
 			<body>
 				<main>
 					<div className='profile-image-wrapper'>
-					<CgProfile className='profile-image'/>
+						<div className='profile-image'></div>
+						<div className='edit-icon'>
+
+						</div>
 					</div>
 				</main>
 			</body>

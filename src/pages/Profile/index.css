@@ -20,16 +20,29 @@ body {
 
 
 .profile-image {
-    background-color: gray;
+    background-color: #6c757d;
+    color: #000000;
     margin: 0px;
+    padding: 0px;
     height: 162px;
     width: 162px;
+    background-image: url('../../../public/refugee-profile-pic.png');
     border-radius: 50%;
 }
 
 .profile-image-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 110px;
+    left: 241px;
+    background: #8A7968;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
 }
 
 .settings-icon {
