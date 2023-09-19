@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Login.css";
 
-function Login() {
+const Login = () => {
   // Google Login
   function handleCallbackResponse(response) {
     document.getElementById("google-login").hidden = true;
@@ -25,14 +25,14 @@ function Login() {
   // Facebook Login
 
   return (
-    <div>
+    <div id="login-body">
       <h1>Login</h1>
 
       <form action="">
         <label>Email</label>
         <input type="email" name="email" id="email" required />
         <label>Password</label>
-        <input type="text" name="password" id="password" required />
+        <input type="password" name="password" id="password" required />
         <div className="checkbox">
           <label>
             <input type="checkbox" />
@@ -63,6 +63,6 @@ function Login() {
       </form>
     </div>
   );
-}
+};
 
 export default Login;

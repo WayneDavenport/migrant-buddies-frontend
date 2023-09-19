@@ -1,52 +1,50 @@
-body {
-	background: white;
-	font-family: 'Inter';
-    padding: 15px;
+#profile-body {
+  background: white;
+  font-family: "Inter";
+  padding: 15px;
 }
 
 .profile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 .profile-header {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 24px;
-	color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
 }
 
-
 .profile-image {
-    background-color: #6c757d;
-    color: #000000;
-    margin: 0px;
-    padding: 0px;
-    height: 162px;
-    width: 162px;
-    background-image: url('../../../public/refugee-profile-pic.png');
-    border-radius: 50%;
+  background-color: #6c757d;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
+  height: 162px;
+  width: 162px;
+  background-image: url("../../../public/refugee-profile-pic.png");
+  border-radius: 50%;
 }
 
 .profile-image-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .edit-icon {
-    position: absolute;
-    top: 110px;
-    left: 241px;
-    background: #8A7968;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
+  position: absolute;
+  top: 110px;
+  left: 241px;
+  background: #8a7968;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
 
 .settings-icon {
-    color: #000000;
-    font-size: 30px;
+  color: #000000;
+  font-size: 30px;
 }
-
