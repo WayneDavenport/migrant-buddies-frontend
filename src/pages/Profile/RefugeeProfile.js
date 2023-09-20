@@ -1,7 +1,6 @@
 import React from 'react';
-import styling from './index.css';
+import './index.css';
 import { FiSettings } from 'react-icons/fi';
-import { CgProfile } from 'react-icons/cg';
 import { FaLocationArrow } from 'react-icons/fa';
 
 const Profile = () => {
@@ -47,6 +46,30 @@ const Profile = () => {
 					<div className='age-para'>
 						<p>Age: 30</p>
 					</div>
+					<div className='btn-container'>
+						<button className='button-refugee'>Housing</button>
+						<button className='button-refugee'>Education</button>
+						<button className='button-refugee'>Language</button>
+					</div>
+					<div>
+						<p style={{fontWeight: '500', padding: '30px 0px 10px 0px'}}>About</p>
+						<p style={{fontWeight: '300'}}>
+							Hi, I’m Sofia. I arrived in Houston a week ago from Ukraine. I am
+							looking for someone who can help me with finding a place to live,
+							education and the English language.
+						</p>
+					</div>
+          <div>
+            <p style={{fontWeight: '500', padding: '30px 0px 10px 0px'}}>Education</p>
+            <ul className='education-list'>
+              <li>Primary Level</li><span className='checkmark'></span>
+              <li>Secondary Level</li><span className='checkmark'></span>
+              <li>Vocal Level</li>
+            </ul>
+          </div>
+          <div className='edit-profile-container'>
+            <button className='btn-edit-profile'>Edit Profile</button>
+          </div>
 				</main>
 			</body>
 		</>
