@@ -33,17 +33,19 @@ const Login = () => {
         <input type="email" name="email" id="email" required />
         <label>Password</label>
         <input type="password" name="password" id="password" required />
-        <div className="checkbox">
-          <label>
+        <div className="checkbox-group">
+          <div className="checkbox">
             <input type="checkbox" />
-            Remember Me
-          </label>{" "}
+            <label>Remember Me</label>
+          </div>
           <a href="/">Forget password?</a>
         </div>
         <input type="submit" value="Sign In" />
         <div className="new-user">
           <label>New User?</label>
-          <a href="/">Sign Up</a>
+          <a className="sign-up" href="/">
+            Sign Up
+          </a>
         </div>
         <div className="border-line">OR</div>
         {/* Google Button */}

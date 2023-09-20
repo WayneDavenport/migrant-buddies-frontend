@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Roboto:wght@400;700&display=swap");
+
 #login-body {
   background: linear-gradient(0deg, #fffbf0, #f4debd);
   background-attachment: fixed; /*both background attachment and repeat prevents gradient background from cutting off at the bottom*/
   background-repeat: no-repeat;
+  font-family: Roboto;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -19,14 +22,12 @@
 }
 
 h1 {
-  font-family: sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
 
 a {
   color: var(--linkColor);
-  font-weight: bold;
 }
 
 form {
@@ -43,7 +44,7 @@ label {
 
 /* first 2 labels */
 form > label:first-child,
-label:nth-child(n + 2) {
+label:nth-child(n + 3) {
   font-weight: bold;
 }
 
@@ -84,45 +85,55 @@ input[type="submit"]:hover {
   background-color: var(--submitHover);
 }
 
-input[type="checkbox"] {
-  background-color: var(--checkboxColor);
-  appearance: none;
-  -webkit-appearance: none;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: 0.15s;
-}
-
-input[type="checkbox"]:checked {
-  color: var(--checkColor);
-}
-
-input[type="checkbox"]:after {
-  color: var(--checkColor);
-  font-size: 15px;
-  font-weight: 900;
-  content: "\2714";
-  display: none;
-}
-
 /* checkbox */
-.checkbox {
-  font-size: 12px;
+.checkbox-group {
+  font-size: 13px;
   display: flex;
   justify-content: space-between;
   margin: 8px 0 16px 0;
 }
 
-.checkbox label input {
+.checkbox {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  background-color: var(--checkboxColor);
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+input[type="checkbox"]:after {
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  font-weight: 900;
+  content: "\f00c";
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+/* new user */
+.new-user label {
   margin-right: 5px;
 }
 
-.new-user label {
-  margin-right: 5px;
+.sign-up {
+  font-weight: bold;
 }
 
 /* border-line */
@@ -136,7 +147,7 @@ input[type="checkbox"]:after {
   height: 1px;
   width: 50%;
   content: "";
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   position: relative;
   vertical-align: middle;
