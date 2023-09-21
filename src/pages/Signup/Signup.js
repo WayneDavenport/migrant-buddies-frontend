@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Login.css";
+import "../Login/Login.css";
 
 const Login = () => {
   // Google Login
@@ -26,25 +26,20 @@ const Login = () => {
 
   return (
     <div id="login-body">
-      <h1>Login</h1>
+      <h1>Sign Up</h1>
 
       <form action="">
+        <label>Name</label>
+        <input type="text" name="name" id="name" required />
         <label>Email</label>
         <input type="email" name="email" id="email" required />
         <label>Password</label>
         <input type="password" name="password" id="password" required />
-        <div className="checkbox-group">
-          <div className="checkbox">
-            <input type="checkbox" />
-            <label>Remember Me</label>
-          </div>
-          <a href="/">Forget password?</a>
-        </div>
-        <input type="submit" value="Sign In" />
+        <input type="submit" value="Sign Up" />
         <div className="new-user">
-          <label>New User?</label>
-          <a className="sign-up" href="/signup">
-            Sign Up
+          <label>Already have an account?</label>
+          <a className="sign-up" href="/">
+            Sign In
           </a>
         </div>
         <div className="border-line">OR</div>

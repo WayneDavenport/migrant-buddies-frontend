@@ -55,6 +55,7 @@ input {
   border-radius: 8px;
 }
 
+input[type="text"],
 input[type="email"],
 input[type="password"] {
   background-color: var(--inputColor);
@@ -63,6 +64,7 @@ input[type="password"] {
   margin: 8px 0 16px 0;
 }
 
+input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
   background-color: transparent;
