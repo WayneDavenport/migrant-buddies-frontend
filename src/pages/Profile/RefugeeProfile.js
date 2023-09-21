@@ -62,9 +62,9 @@ const Profile = () => {
           <div>
             <p style={{fontWeight: '500', padding: '30px 0px 10px 0px'}}>Education</p>
             <ul className='education-list'>
-              <li>Primary Level</li><span className='checkmark'></span>
-              <li>Secondary Level</li><span className='checkmark'></span>
-              <li>Vocal Level</li>
+              <li>Primary Level</li>
+              <li>Secondary Level</li>
+              <li>Vocational Level</li>
             </ul>
           </div>
           <div className='edit-profile-container'>
