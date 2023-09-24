@@ -1,0 +1,155 @@
+.buddy-hero {
+	background: white;
+	font-family: 'Inter';
+    padding: 15px;
+}
+
+.profile-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.profile-header {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.buddy-container {
+    padding: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(138, 121, 104, 0.5) 0%,
+		rgba(244, 222, 189, 0.5) 100%
+	);
+	border-radius: 65px;
+}
+
+.buddy-image {
+	background-color: #6c757d;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+    min-height: 162px;
+	height: 162px;
+	width: 162px;
+    min-width: 162px;
+	background-image: url('/public/buddy-profile-pic.png');
+	border-radius: 50%;
+}
+
+.buddy-image-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: auto auto;
+	max-width: 200px;
+	margin-bottom: 10px;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		#8a7968 0%,
+		rgba(196, 196, 196, 0) 100%
+	);
+}
+
+.pronouns-style {
+	padding-left: 5px;
+	color: #000000;
+	font-weight: 300;
+}
+
+.name-container {
+	display: flex;
+	justify-content: space-around;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.location-wrapper {
+	color: #6c757d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.location-arrow {
+	margin-right: 20px;
+}
+
+.age-para {
+	display: flex;
+	justify-content: center;
+	color: #6c757d;
+	margin-bottom: 20px;
+	padding-top: 5px;
+}
+
+.btn-container {
+	display: grid;
+    margin-top: 10px;
+	justify-content: flex-start;
+	grid-template-columns: 90px 90px 90px;
+	column-gap: 10px;
+    row-gap: 10px;
+}
+
+.button-refugee {
+	background: #e5e5e5;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: #8a7968;
+	border: 2px solid #8a7968;
+	padding: 20px;
+	min-width: 134px;
+	min-height: 50px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 15px;
+	color: #ffff;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.checkmark {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: 306px;
+	top: 585px;
+	background: url('/public/checkmark.png');
+	opacity: 0.8;
+}
+
+li::marker {
+	text-align: center;
+	font-size: 8px;
+	padding-bottom: 10px;
+}
+
+.education-list {
+	list-style-position: inside;
+	padding-left: 30px;
+	font-weight: 200;
+	line-height: 2rem;
+}
+
+.contact-buddy-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
