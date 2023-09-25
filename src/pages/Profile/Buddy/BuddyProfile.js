@@ -1,31 +1,39 @@
 import React from 'react';
 import './index.css';
 import { FaLocationArrow } from 'react-icons/fa';
+import { LuMessagesSquare } from 'react-icons/lu';
+import { IoIosCall } from 'react-icons/io';
 
 const Profile = () => {
 	return (
 		<>
 			<header>
 				<nav className='profile-nav'>
-					<a href='back-arrow'>
-						<svg
-							width='24'
-							height='24'
-							viewBox='0 0 24 24'
-							fill='none'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path
-								d='M15.535 3.51501L7.04999 12L15.535 20.485L16.95 19.071L9.87799 12L16.95 4.92901L15.535 3.51501Z'
-								fill='#333333'
-							/>
-						</svg>
-					</a>
-					<h2 className='profile-header'>Buddy Details</h2>
+					<ul className='profile-ul'>
+						<li>
+							<a href='back-arrow'>
+								<svg
+									width='24'
+									height='24'
+									viewBox='0 0 24 24'
+									fill='none'
+									xmlns='http://www.w3.org/2000/svg'
+								>
+									<path
+										d='M15.535 3.51501L7.04999 12L15.535 20.485L16.95 19.071L9.87799 12L16.95 4.92901L15.535 3.51501Z'
+										fill='#333333'
+									/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<h2 className='profile-header'>Buddy Details</h2>
+						</li>
+					</ul>
 				</nav>
 			</header>
 			<body>
-				<main id='buddy-profile-body' className='buddy-hero'> 
+				<main id='buddy-profile-body' className='buddy-hero'>
 					<div className='buddy-container'>
 						<div className='buddy-image-wrapper'>
 							<div className='buddy-image'></div>
@@ -64,8 +72,8 @@ const Profile = () => {
 						</p>
 					</div>
 					<div className='contact-buddy-container'>
-						<button className='btn-contact'>Message</button>
-						<button className='btn-contact'>Call</button>
+						<button className='btn-wrapper'><span className='contact-btn'><LuMessagesSquare /></span>Message</button>
+						<button className='btn-wrapper'><span className='contact-btn'><IoIosCall/></span>Call</button>
 					</div>
 				</main>
 			</body>

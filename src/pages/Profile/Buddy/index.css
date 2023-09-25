@@ -5,12 +5,15 @@
 }
 
 .profile-nav {
-	display: flex;
-	justify-content: space-between;
 	padding: 10px 15px;
-	align-items: center;
 	margin-bottom: 2rem;
 }
+
+.profile-ul {
+    display: flex;
+    list-style: none;
+}
+
 .profile-header {
 	font-style: normal;
 	font-weight: 500;
@@ -105,24 +108,29 @@
 	padding: 10px;
 }
 
-.btn-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-wrapper {
 	background: #8a7968;
 	border: 2px solid #8a7968;
-	padding: 20px;
-	min-width: 134px;
+	color: #ffff;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+    max-width: 150px;
+	min-width: 150px;
 	min-height: 50px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	border-radius: 15px;
-	color: #ffff;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 16px;
 	text-align: center;
+}
+
+.contact-btn {
+    font-size: 20px;
 }
 
 .checkmark {
@@ -153,3 +161,5 @@ li::marker {
 	justify-content: space-around;
 	margin-top: 2rem;
 }
+
+
