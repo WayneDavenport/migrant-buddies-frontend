@@ -3,24 +3,24 @@ import "../Login/Login.css";
 
 const Login = () => {
   // Google Login
-  function handleCallbackResponse(response) {
-    document.getElementById("google-login").hidden = true;
-  }
+  // function handleCallbackResponse(response) {
+  //   document.getElementById("google-login").hidden = true;
+  // }
 
-  useEffect(() => {
-    /*global google*/
-    google.accounts.id.initialize({
-      client_id:
-        "1071041387259-2kf53ndccj9q49i3iukrl235or4kbhgd.apps.googleusercontent.com",
-      callback: handleCallbackResponse,
-    });
+  // useEffect(() => {
+  //   /*global google*/
+  //   google.accounts.id.initialize({
+  //     client_id:
+  //       "1071041387259-2kf53ndccj9q49i3iukrl235or4kbhgd.apps.googleusercontent.com",
+  //     callback: handleCallbackResponse,
+  //   });
 
-    google.accounts.id.renderButton(document.getElementById("google-login"), {
-      theme: "outline",
-      size: "large",
-      width: 233, // Needs resizing
-    });
-  }, []);
+  //   google.accounts.id.renderButton(document.getElementById("google-login"), {
+  //     theme: "outline",
+  //     size: "large",
+  //     width: 233, // Needs resizing
+  //   });
+  // }, []);
 
   // Facebook Login
 
