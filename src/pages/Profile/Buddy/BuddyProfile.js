@@ -7,52 +7,30 @@ import { IoIosCall } from 'react-icons/io';
 const Profile = () => {
 	return (
 		<>
-			<header>
-				<nav className='profile-nav'>
-					<ul className='profile-ul'>
-						<li>
-							<a href='back-arrow'>
-								<svg
-									width='24'
-									height='24'
-									viewBox='0 0 24 24'
-									fill='none'
-									xmlns='http://www.w3.org/2000/svg'
-								>
-									<path
-										d='M15.535 3.51501L7.04999 12L15.535 20.485L16.95 19.071L9.87799 12L16.95 4.92901L15.535 3.51501Z'
-										fill='#333333'
-									/>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<h2 className='profile-header'>Buddy Details</h2>
-						</li>
-					</ul>
-				</nav>
-			</header>
+			<header></header>
 			<body>
-				<main id='buddy-profile-body' className='buddy-hero'>
-					<div className='buddy-container'>
-						<div className='buddy-image-wrapper'>
-							<div className='buddy-image'></div>
-						</div>
-
-						<div className='name-container'>
-							<p>
-								Julianna Sandman
-								<span className='pronouns-style'>(she/her)</span>{' '}
-							</p>
-						</div>
-						<div className='location-wrapper'>
-							<FaLocationArrow className='location-arrow' />
-							<p>Houston, TX</p>
-						</div>
-						<div className='age-para'>
-							<p>Age: 29</p>
-						</div>
+				<div className='buddy-container'>
+					<div>
+						<p className='profile-header'>Buddy Details</p>
 					</div>
+					<div className='buddy-image-wrapper'>
+						<div className='buddy-image'></div>
+					</div>
+					<div className='name-wrapper'>
+						<p>
+							Julianna Sandman
+							<span className='pronouns-style'>(she/her)</span>{' '}
+						</p>
+					</div>
+					<div className='location-wrapper'>
+						<FaLocationArrow className='location-arrow' />
+						<p>Houston, TX</p>
+					</div>
+					<div className='age-para'>
+						<p>Age: 29</p>
+					</div>
+				</div>
+				<main id='buddy-profile-body' className='buddy-hero'>
 					<h4>Allow to help with</h4>
 					<div className='btn-container'>
 						<button className='button-refugee'>Housing</button>
@@ -72,8 +50,18 @@ const Profile = () => {
 						</p>
 					</div>
 					<div className='contact-buddy-container'>
-						<button className='btn-wrapper'><span className='contact-btn'><LuMessagesSquare /></span>Message</button>
-						<button className='btn-wrapper'><span className='contact-btn'><IoIosCall/></span>Call</button>
+						<button className='btn-wrapper'>
+							<span className='contact-btn'>
+								<LuMessagesSquare />
+							</span>
+							Message
+						</button>
+						<button className='btn-wrapper'>
+							<span className='contact-btn'>
+								<IoIosCall />
+							</span>
+							Call
+						</button>
 					</div>
 				</main>
 			</body>

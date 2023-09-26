@@ -1,7 +1,7 @@
 .buddy-hero {
 	background: white;
 	font-family: 'Inter';
-    padding: 15px;
+	padding: 15px;
 }
 
 .profile-nav {
@@ -10,8 +10,8 @@
 }
 
 .profile-ul {
-    display: flex;
-    list-style: none;
+	display: flex;
+	list-style: none;
 }
 
 .profile-header {
@@ -23,13 +23,19 @@
 }
 
 .buddy-container {
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
 	background: linear-gradient(
 		180deg,
 		rgba(138, 121, 104, 0.5) 0%,
 		rgba(244, 222, 189, 0.5) 100%
 	);
-	border-radius: 65px;
+	border-radius: 0px 0px 65px 65px;
+	max-width: 1000px;
+	height: 413px;
 }
 
 .buddy-image {
@@ -37,10 +43,10 @@
 	color: #000000;
 	margin: 0;
 	padding: 0;
-    min-height: 162px;
+	min-height: 162px;
 	height: 162px;
 	width: 162px;
-    min-width: 162px;
+	min-width: 162px;
 	background-image: url('/public/buddy-profile-pic.png');
 	border-radius: 50%;
 }
@@ -48,9 +54,8 @@
 .buddy-image-wrapper {
 	display: flex;
 	justify-content: center;
-	margin: auto auto;
 	max-width: 200px;
-	margin-bottom: 10px;
+	margin: 20px 0px;
 	background: radial-gradient(
 		50% 50% at 50% 50%,
 		#8a7968 0%,
@@ -64,7 +69,7 @@
 	font-weight: 300;
 }
 
-.name-container {
+.name-wrapper {
 	display: flex;
 	justify-content: space-around;
 	font-style: normal;
@@ -94,11 +99,11 @@
 
 .btn-container {
 	display: grid;
-    margin-top: 10px;
+	margin-top: 10px;
 	justify-content: flex-start;
 	grid-template-columns: 90px 90px 90px;
 	column-gap: 10px;
-    row-gap: 10px;
+	row-gap: 10px;
 }
 
 .button-refugee {
@@ -112,11 +117,11 @@
 	background: #8a7968;
 	border: 2px solid #8a7968;
 	color: #ffff;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 15px 0px;
-    max-width: 150px;
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 15px 0px;
+	max-width: 150px;
 	min-width: 150px;
 	min-height: 50px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -130,7 +135,7 @@
 }
 
 .contact-btn {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .checkmark {
@@ -161,5 +166,3 @@ li::marker {
 	justify-content: space-around;
 	margin-top: 2rem;
 }
-
-
